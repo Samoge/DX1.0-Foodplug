@@ -1,0 +1,66 @@
+@media screen and (max-width: 1120px) {
+
+    
+    
+    /* explore foods section starts here */
+    /* explore foods section ends here */
+
+
+    /* header section starts here */
+.nav-desktop{
+    display: none;
+}
+
+    .header-banner-content{
+        /* border: 3px solid blue; */
+        width: 100%;
+    }
+    /* header section ends here */
+
+
+    /* about us section starts here */
+.about-us__card-container{
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-us__text-contentholder,
+.about-us__card-imageholder{
+    min-width: 350px;
+    margin: 20px 0;
+}
+
+    /* about us section ends here */
+
+
+    /* explore foods section starts here */
+    .foodcard__item{
+        margin: 20px 0;
+    }
+    /* explore foods section ends here */
+
+
+    /* faq section starts here */
+    .faqs__item{
+        min-width: 100%;
+    }
+    .faq_parallax{
+        flex-direction: column;
+    }
+
+    /* faq section ends here */
+
+    /* footer section starts here */
+    footer{
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .footer-icon_holder{
+        margin: 20px 0;
+    }
+
+    /* footer section ends here */
+}
+    

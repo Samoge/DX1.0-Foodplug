@@ -11,6 +11,9 @@
         url('./font/lato-regular-webfont.woff')format('woff'),
         url('./font/lato-regular-webfont.woff2')format('woff2');
 }
+html{
+    scroll-behavior: smooth;
+}
 
 body {
     /* font-family: 'Lato', sans-serif; */
@@ -42,24 +45,319 @@ span a {
     border: 2px solid var(--main-color);
 }
 
+.btn-light {
+    background: transparent;
+    border: 2px solid var(--main-color);
+}
+
+.btn-light:hover {
+    color: var(--main-color)
+    /* color: var(--main-color); */
+}
 .btn-main:hover {
     background: transparent;
-    /* color: var(--main-color); */
+    color: var(--main-color);
 }
 
 /* reusables ends here */
 
-/* faq section starts here */
-/* faq section endss here */
+/* ================= */
+.nav-mobile{
+    background: var(--main-color);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px;
+    align-items: center;
+}
+
+.nav-mobile__brand{
+    display: flex;
+    align-items: center;
+}
+
+.nav-mobile__brand span {
+    color: var(--white-color);
+    margin-left: 10px;
+    font-size: 25px;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+.mobile-nav__logo-holder{
+    padding: 5px;
+    border: 2px solid var(--white-color);
+    color: var(--white-color);
+    font-size: 25px;
+}
+
+.hamburger-menu{
+    border:2px solid var(--white-color);
+    width: 25px;
+    height: 25px;
+}
+
+
+.mobile__link-holder{
+    display: none;
+    width: 50%;
+    height: 100vh;
+    position: fixed;
+    background: var(--main-color);
+    right: 0;
+    top: 0;
+    /* padding-left: 15px; */
+}
+
+.mobile__link-holder button{
+    border: 2px solid var(--white-color);
+    background: transparent;
+    color: var(--white-color);
+    margin-left: 15px;
+}
+
+.mobile__link-holder li{
+    list-style: none;
+}
+
+.mobile__header-links{
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: var(--white-color);
+}
+
+.mobile__header-links:hover,
+.mobile__header-links:focus {
+    background: var(--white-color);
+    color: var(--main-color);
+}
+
+.active-link {
+background: var(--white-color);
+color: var(--main-color);
+
+}
+/* ================= */
+
+
+
+/* nav section starts here */
+.nav-desktop{
+    position: fixed;
+    width: 100%;
+    background: var(--white-color);
+}
+
+.header-logo{
+    top: 0;
+    left: 60px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--main-color);
+    width: 100px;
+    height: 100px;
+    color: var(--white-color);
+    font-size: 50px;
+}
+
+.link-holder{
+    display: flex;
+    /* border: 3px solid tomato; */
+    justify-content: flex-end;
+}
+
+.link-holder button{
+    margin-left: 20px;
+}
+
+.link-holder ul{
+    display: flex;
+    /* border: 3px solid black;
+    width: 500px; */
+}
+
+.link-holder li {
+    list-style: none;
+    border: 2px solid var(--white-color);
+}
+
+.link-holder li:hover{
+    border: 2px solid var(--main-color);
+}
+
+.header-links{
+    display: block;
+    color: var(--main-color);
+    text-decoration: none;
+    padding: 15px 20px;
+}
+
+
+/* nav section ends here */
+
+
+
+/* Header section starts here */
+.header-banner{
+    /* border: 3px solid tomato; */
+    padding-top: 100px;
+    padding-bottom: 20px;
+    /* height: 450px; */
+    background: url(./img/banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.header-banner__container{
+    height: 100%;
+    /* border: 3px solid black; */
+    width: 90%;
+    margin: 0 auto;
+}
+
+.header-banner-content{
+    /* border: 3px solid blue; */
+    width: 450px;
+}
+
+.header-banner-content h1{
+    color: var(--main-color-dark);
+    font-size: 45px;
+    font-weight: 300;
+    line-height: 1.1;
+}
+
+.header-banner-content p{
+    margin: 20px 0;
+    line-height: 1.6;
+    color: var(--text-color);
+}
+
+.banner-icon{
+    margin-left: 10px;
+}
+.header-banner-content button{
+    margin-right: 10px;
+}
+
+
+
+
+.header__counter{
+    display: flex;
+    background: var(--main-color);
+    justify-content: space-evenly;
+    padding: 20px 0;
+}
+
+.counter-item{
+    text-align: center;
+    width: 220px;
+    /* height: 90px; */
+    color: var(--white-color);
+    /* border: 3px solid white; */
+}
+
+.counter-item h2{
+    font-size: 28px;
+    font-weight: bolder;
+    margin-bottom: 5px;
+}
+/* Tutorial purposes */
+/* .counter-item p{
+    text-transform: lowercase;
+} */
+
+
+
+/* Header section endss here */
 
 /* about us section starts here */
+
+
+
+.about-us__card-container{
+    width: 90%;
+    /* border: 3px solid tomato; */
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+    margin: 0 auto;
+}
+
+.about-us__card-imageholder{
+    border-radius: 30px;
+    height: 350px;
+    width: 48%;
+    /* border: 3px solid black; */
+    overflow: hidden;
+}
+
+.about-us__card-imageholder img{
+    /* height: auto; */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    /* tutorial purpose 
+    object-fit: cover;*/
+}
+
+.about-us__text-contentholder{
+    /* height: 350px; */
+    width: 48%;
+    /* border: 3px solid blue; */
+}
+
+.about-us__text-contentholder ul{
+    margin-bottom: 20px;
+}
+
+.about-us__text-contentholder li{
+    list-style: none;
+}
+
+.check-icon{
+    color: var(--main-color);
+    margin-right: 15px;
+    font-weight: bolder;
+    font-size: 23px;
+}
+
+.about-us__text-contentholder h2{
+    color: var(--main-color);
+    background: var(--light-text-color);
+    border-left: 5px solid var(--main-color);
+    border-right: 5px solid var(--main-color);
+    padding: 10px;
+    font-size: 28px;
+}
+
+.about-us__text-contentholder p{
+    margin: 20px 0;
+}
+
+.about-us__text-contentholder button:hover{
+    color: var(--main-color);
+}
+
+.cardicon{
+    margin-left: 10px;
+}
+
+
+
+
 .about-us__banner-holder {
+    padding: 30px 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     /* border: 3px solid tomato; */
     text-align: center;
-    height: 250px;
+    /* height: 250px; */
     background: var(--gray-gradient), url('./img/about3.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -68,6 +366,7 @@ span a {
 
 .about-us__banner-holder h2 {
     color: var(--main-color);
+    font-size: 30px;
 }
 
 .about-us__banner-holder p {
@@ -119,6 +418,7 @@ span a {
 .foodcard-container {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     /* border: 3px solid tomato; */
 }
